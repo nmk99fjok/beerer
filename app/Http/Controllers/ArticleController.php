@@ -20,7 +20,7 @@ class ArticleController extends Controller
         $search = $request->search;
         $sort = $request->get('sort');
 
-        $articles = Article::orderBy('title', 'desc')->searchArticle($search)->paginate(15);
+        $articles = Article::orderBy('title', 'asc')->searchArticle($search)->paginate(15);
 
         //sidebar.bladeと連動 記事のソート処理の場合分け
         switch($sort) {
