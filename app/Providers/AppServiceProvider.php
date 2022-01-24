@@ -26,6 +26,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Schema::defaultStringLength(191);
+
         //TagとArticleのリレーション数を取得,サイドバーへ変数を渡したいため
         if(Schema::hasTable('tags')) {
             $getCountTag = Tag::withCount('articles')
