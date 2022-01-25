@@ -1,7 +1,7 @@
 <?php
 
 // トップページ表示
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::namespace('User')->prefix('user')->name('user.')->group(function () {
 

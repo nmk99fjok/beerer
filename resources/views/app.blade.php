@@ -36,7 +36,7 @@
       <footer class="mt-5 page-footer font-small dark">
 
         <div class="footer-copyright text-center py-3">© 2021 Copyright:
-          <a href="{{ url('/') }}"> Beerer!</a>
+          <a href="{{ route('home') }}"> Beerer!</a>
         </div>
 
       </footer>
